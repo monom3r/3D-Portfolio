@@ -1,5 +1,5 @@
-import { useRef, useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useRef, useMemo } from 'react';
+import { useFrame } from '@react-three/fiber';
 
 const Particles = ({ count = 200 }) => {
   const mesh = useRef();
@@ -41,14 +41,14 @@ const Particles = ({ count = 200 }) => {
     <points ref={mesh}>
       <bufferGeometry>
         <bufferAttribute
-          attach="attributes-position"
+          attach='attributes-position'
           count={count}
           array={positions}
           itemSize={3}
         />
       </bufferGeometry>
       <pointsMaterial
-        color="#ffffff"
+        color='#ffffff'
         size={0.05}
         transparent
         opacity={0.9}
